@@ -1,0 +1,98 @@
+:root {
+    --white-color: #fff;
+    --text-heading-color: #555;
+    --text-color: #9a9a9a;
+    --backgroud-color: #3DC9D9;
+
+    --navbar-height: 104px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.backgroud-1 {
+    background: linear-gradient(90deg, #ffd005, #ff9e05);
+}
+
+.backgroud-2 {
+    background: linear-gradient(90deg, #f7676f, #f78a65);
+}
+
+.backgroud-3 {
+    background: linear-gradient(90deg, #bc71d4, #d77183);
+    
+}
+
+.pd-r30 {
+    padding-right: 30px;
+}
+
+.pd-200 {
+    padding-bottom: 200px;
+}
+
+.pd-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.beaches__tour-mg {
+    margin-top: 92px;
+    margin-bottom: 84px;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.fa, .fas {
+    font-weight: 300 !important;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--white-color);
+}
+
+.navbar__item-stand-out {
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 2px 3px;
+    border-radius: 3px;
+    float: right;
+ }
+
+ .subnav__pseudo::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 1px;
+    border-width: 6px 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #9a9a9a;
+ }
+
+ .text__desc {
+    font-size: 1.4rem;
+    font-family: "poppins";
+    line-height: 2.6rem;
+    color: var(--text-color);
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }

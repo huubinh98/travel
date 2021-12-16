@@ -1,0 +1,244 @@
+@media (min-width: 1024px) {
+  .hide-on-pc {
+    display: none;
+  }
+
+  .navbar__item-link-btn {
+    background-color: #ba71da;
+    margin-left: 23px;
+    background-clip: padding-box;
+    padding: 11px 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 25px;
+  }
+
+  .subnav {
+    width: 190px;
+    position: absolute;
+    top: 81%;
+    box-shadow: 0 2px 5px #ffffff;
+    background-color: var(--white-color);
+    /* display: none; */
+    opacity: 0;
+	  visibility: hidden;
+	/* top: 150%; */
+	  transition: all 0.5s ease-in-out;
+    /* animation: fadeIn ease-in-out 0.5s; */
+  }
+
+  /* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transition: none;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s ease-in-out;
+    }
+} */
+
+  .subnav__item {
+    position: relative;
+    padding: 16px 26px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  .subnav__item:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+
+  .navbar__item:hover >.subnav,
+  .subnav__item:hover >.subnav {
+    /* display: block; */
+    opacity: 1;
+	  visibility: visible;
+	/* top: 100%; */
+  }
+
+  /* .slider__wrap {
+    background-size: cover;
+  } */
+}
+
+@media (min-width: 1023px) and (max-width:1239px) {
+  .header__navbar,
+  .navbar__item-link-btn {
+    margin-left: unset;
+  }
+  
+  .navbar__item-link {
+    padding: 23px 14px;
+  }
+
+  .navbar__item-link-btn {
+    background-clip: padding-box;
+    padding: 11px;
+  }
+
+
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .header {
+    height: 125px;
+    background-color: var(--text-heading-color);
+  }
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .header__logo {
+    margin: 20px 0 10px;
+  }
+
+  .header__bars {
+    margin-left: 0;
+  }
+
+  #nav__input:checked ~ .navbar__list {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .navbar__list {
+    width: 300px;
+    padding: 15px 30px;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    background-color: var(--text-heading-color);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.4s, opacity linear 0.3s;
+  }
+
+  .navbar__item-link {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    font-weight: 700;
+    padding: 18px 0 0;
+    display: block;
+    line-height: 3.4rem;
+  }
+
+  .subnav.subnav--menu {
+    position: inherit;
+    padding-left: 20px;
+  }
+
+  .subnav__item-link {
+    text-transform: uppercase;
+    color: #f4f4f4;
+    letter-spacing: 2px;
+    position: inherit;
+    line-height: 3.4rem;
+    padding-left: 20px;
+  }
+
+  .subnav__pseudo::after {
+    content: none;
+  }
+  
+  .slider__wrap {
+    background-size: cover;
+  }
+
+  .beaech__time-line {
+    bottom: unset;
+  }
+
+  .beaches__tour-mg {
+    padding-top: 92px;
+  }
+
+  .beaches__tour-item {
+    padding-bottom: 26px;
+  }
+
+  .beaches__footer {
+    height: unset;
+    display: block;
+  }
+
+  .out-package__item {
+    margin-bottom: 30px;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .footer__input {
+    width: unset;
+    margin-bottom: 20px;
+  }
+
+
+  .footer__btn {
+    margin-left: unset;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .slider__wrap {
+    padding-top: 35%;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .c-pd-30 {
+    padding: 0 30px;
+  }
+
+  .slider__select-wrap {
+    padding: 0 40px;
+  }
+
+  .slider__wrap {
+    padding-top: 50%;
+  }
+
+  .slider__option-form {
+    height: 48px;
+  }
+
+  .footer__end {
+    justify-content: center;
+  }
+
+  .beaches__footer--btn {
+    padding: 17px 40px;
+  }
+  .places__bottom-btn {
+    padding: 17px 0;
+  }
+}
